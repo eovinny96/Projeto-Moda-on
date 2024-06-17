@@ -1,0 +1,141 @@
+:root { 
+    --large-default-padding: 6.5em;
+    --medium-default-padding:4em;
+}
+
+@font-face {
+    font-family: Roboto ;
+    src: 
+     url(Font/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Viaoda Libre ;
+    src: url(Font/Viaoda/ViaodaLibre-Regular.ttf);
+}
+
+body {
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+}
+
+.principal {
+    width: 64em;
+    margin: 1.25em auto;
+}
+
+h1, h2 {
+    font-family: 'Viaoda Libre';
+    font-weight: normal;
+}
+
+.header-top {
+    background-color: #162028;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipo {
+    color: white;
+    margin: .5em 0 .8em 4.4375em;
+}
+
+.header-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 1em;
+}
+
+.header-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #425564;
+    font-size: 1.3em;
+    letter-spacing: .15em;
+    transition: color .3s linear;
+}
+
+.header-nav a:hover{
+    color: white;
+}
+
+.portfolio {
+    padding: var(--large-default-padding);
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 2.8em;
+    color: #31383d;
+}
+
+.portfolio p {
+    color: #555;
+    letter-spacing: .1em;
+}
+
+.gallery {
+    padding: var(--large-default-padding) var(--medium-default-padding);
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.gallery-card {
+    text-align: center;
+}
+
+.gallery-title {
+    color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.gallery-text {
+    color: #555;
+}
+.about {
+    color: white;
+    padding: var(--large-default-padding);
+    background-color:  #003d52;
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.about h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about p{
+    line-height: 1.3em;
+    width: 80%;
+}
+
+.rodape{
+    background-color: #0b171f ;
+    text-align: center;
+    color:#6f8597 ;
+    padding: 1.8em;
+    letter-spacing: .3em;
+}
+
+.rodape a{
+    text-decoration: none;
+    color:#6f8597 ;
+    transition: color .3s linear;
+}
+
+.rodape a:hover{
+    color: white;
+}
